@@ -1,12 +1,12 @@
 # SVM_Parameter_Optimization
 🧪 Methodology
 
-Dataset Selection & Preprocessing A multi-class dataset from the UCI library was used.
+1.Dataset Selection & Preprocessing A multi-class dataset from the UCI library was used.
 The dataset had between 5k to 30k rows.
 
 The dataset was split into 10 random 70-30 train-test splits, labeled S1 to S10.
 
-Model and Hyperparameter Optimization Support Vector Machine (SVM) was chosen as the classifier.
+2.Model and Hyperparameter Optimization Support Vector Machine (SVM) was chosen as the classifier.
 We used Optuna, a hyperparameter optimization library, to tune:
 
 Kernel type (rbf or poly)
@@ -17,7 +17,7 @@ gamma (kernel coefficient for ‘rbf’ and ‘poly’)
 
 Each sample was optimized over 100 iterations using Optuna’s study.optimize() function.
 
-Evaluation For each sample, the best accuracy and corresponding SVM parameters were recorded.
+3.Evaluation For each sample, the best accuracy and corresponding SVM parameters were recorded.
 The sample with the highest accuracy was further analyzed by plotting a convergence graph.
 
 📋 Results Table
